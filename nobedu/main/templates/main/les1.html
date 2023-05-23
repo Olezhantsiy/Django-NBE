@@ -1,0 +1,377 @@
+{% extends 'main/layout.html' %}
+{% load static%}
+
+{% block title %}Урок 1. Глагол to be в настоящем времени{% endblock %}
+
+{% block content %}
+
+<style>
+    .nav-link {
+  font-size: 24px; /* начальный размер шрифта */
+  transform: scale(1); /* начальный масштаб элемента */
+  transition: transform 0.5s ease; /* добавляем анимацию перехода */
+  color: #fff;
+}
+
+.nav-link:hover {
+color: #FFC107;
+  transform: scale(1.25); /* увеличиваем масштаб элемента при наведении */
+}
+</style>
+<link rel='stylesheet' id='astra-theme-css-css' href='https://langformula.ru/wp-content/themes/astra/assets/css/minified/style.min.css?ver=4.1.5' media='all' />
+<style id='astra-theme-css-inline-css'>
+.ast-no-sidebar .entry-content
+.alignfull {margin-left: calc( -50vw + 50%);margin-right: calc( -50vw + 50%);max-width: 100vw;width: 100vw;}.
+ast-no-sidebar
+.entry-content .alignwide {margin-left: calc(-41vw + 50%);margin-right: calc(-41vw + 50%);max-width: unset;width: unset;}.ast-no-sidebar
+.entry-content .alignfull .alignfull,
+.ast-no-sidebar .entry-content .alignfull .alignwide,.ast-no-sidebar .entry-content .alignwide .alignfull,
+.ast-no-sidebar .entry-content .alignwide .alignwide,.ast-no-sidebar .entry-content .wp-block-column .alignfull,
+.ast-no-sidebar .entry-content .wp-block-column .alignwide{width: 100%;margin-left: auto;margin-right: auto;}
+.wp-block-gallery,.blocks-gallery-grid {margin: 0;}.wp-block-separator {max-width: 100px;}.wp-block-separator.is-style-wide,
+.wp-block-separator.is-style-dots {max-width: none;}.entry-content .has-2-columns .wp-block-column:first-child {padding-right: 10px;}
+.entry-content .has-2-columns .wp-block-column:last-child {padding-left: 10px;}@media (max-width: 782px) {.entry-content .wp-block-columns .wp-block-column {flex-basis: 100%;}
+.entry-content .has-2-columns .wp-block-column:first-child {padding-right: 0;}.entry-content .has-2-columns .wp-block-column:last-child {padding-left: 0;}}body .entry-content .wp-block-latest-posts {margin-left: 0;}
+body .entry-content .wp-block-latest-posts li {list-style: none;}
+.ast-no-sidebar .ast-container .entry-content .wp-block-latest-posts {margin-left: 0;}
+.ast-header-break-point .entry-content .alignwide {margin-left: auto;margin-right: auto;}
+.entry-content .blocks-gallery-item img {margin-bottom: auto;}
+.wp-block-pullquote {border-top: 4px solid #555d66;border-bottom: 4px solid #555d66;color: #40464d;}:root{--ast-container-default-xlg-padding:6.67em;--ast-container-default-lg-padding:5.67em;--ast-container-default-slg-padding:4.34em;--ast-container-default-md-padding:3.34em;--ast-container-default-sm-padding:6.67em;--ast-container-default-xs-padding:2.4em;--ast-container-default-xxs-padding:1.4em;--ast-code-block-background:#EEEEEE;--ast-comment-inputs-background:#FAFAFA;}html{font-size:100%;}a,.page-title{color:#0274be;}a:hover,a:focus{color:#3a3a3a;}body,button,input,select,textarea,.ast-button,.ast-custom-button{font-family:'Open Sans',sans-serif;font-weight:400;font-size:16px;font-size:1rem;line-height:1.65em;}blockquote{color:#000000;}p,.entry-content p{margin-bottom:0.5em;}h1,.entry-content h1,h2,.entry-content h2,h3,.entry-content h3,h4,.entry-content h4,h5,.entry-content h5,h6,.entry-content h6,.site-title,.site-title a{font-family:'Open Sans',sans-serif;font-weight:600;}.site-title{font-size:16px;font-size:1rem;display:none;}header .custom-logo-link img{max-width:185px;}.astra-logo-svg{width:185px;}.site-header .site-description{font-size:15px;font-size:0.9375rem;display:none;}.entry-title{font-size:25px;font-size:1.5625rem;}h1,.entry-content h1{font-size:24px;font-size:1.5rem;font-weight:600;font-family:'Open Sans',sans-serif;}h2,.entry-content h2{font-size:23px;font-size:1.4375rem;font-weight:600;font-family:'Open Sans',sans-serif;}h3,.entry-content h3{font-size:20px;font-size:1.25rem;font-weight:600;font-family:'Open Sans',sans-serif;}h4,.entry-content h4{font-size:18px;font-size:1.125rem;line-height:1.2em;font-family:'Open Sans',sans-serif;}h5,.entry-content h5{font-size:18px;font-size:1.125rem;line-height:1.2em;font-family:'Open Sans',sans-serif;}h6,.entry-content h6{font-size:16px;font-size:1rem;line-height:1.25em;font-family:'Open Sans',sans-serif;}::selection{background-color:#0274be;color:#ffffff;}body,h1,.entry-title a,.entry-content h1,h2,.entry-content h2,h3,.entry-content h3,h4,.entry-content h4,h5,.entry-content h5,h6,.entry-content h6{color:#000000;}.tagcloud a:hover,.tagcloud a:focus,.tagcloud a.current-item{color:#ffffff;border-color:#0274be;background-color:#0274be;}input:focus,input[type="text"]:focus,input[type="email"]:focus,input[type="url"]:focus,input[type="password"]:focus,input[type="reset"]:focus,input[type="search"]:focus,textarea:focus{border-color:#0274be;}input[type="radio"]:checked,input[type=reset],input[type="checkbox"]:checked,input[type="checkbox"]:hover:checked,input[type="checkbox"]:focus:checked,input[type=range]::-webkit-slider-thumb{border-color:#0274be;background-color:#0274be;box-shadow:none;}.site-footer a:hover + .post-count,.site-footer a:focus + .post-count{background:#0274be;border-color:#0274be;}.single .nav-links .nav-previous,.single .nav-links .nav-next{color:#0274be;}.entry-meta,.entry-meta *{line-height:1.45;color:#0274be;}.entry-meta a:hover,.entry-meta a:hover *,.entry-meta a:focus,.entry-meta a:focus *,.page-links > .page-link,.page-links .page-link:hover,.post-navigation a:hover{color:#3a3a3a;}#cat option,.secondary .calendar_wrap thead a,.secondary .calendar_wrap thead a:visited{color:#0274be;}.secondary .calendar_wrap #today,.ast-progress-val span{background:#0274be;}.secondary a:hover + .post-count,.secondary a:focus + .post-count{background:#0274be;border-color:#0274be;}.calendar_wrap #today > a{color:#ffffff;}.page-links .page-link,.single .post-navigation a{color:#0274be;}.widget-title{font-size:22px;font-size:1.375rem;color:#000000;}#secondary,#secondary button,#secondary input,#secondary select,#secondary textarea{font-size:16px;font-size:1rem;}a:focus-visible,.ast-menu-toggle:focus-visible,.site .skip-link:focus-visible,.wp-block-loginout input:focus-visible,.wp-block-search.wp-block-search__button-inside .wp-block-search__inside-wrapper,.ast-header-navigation-arrow:focus-visible{outline-style:dotted;outline-color:inherit;outline-width:thin;border-color:transparent;}input:focus,input[type="text"]:focus,input[type="email"]:focus,input[type="url"]:focus,input[type="password"]:focus,input[type="reset"]:focus,input[type="search"]:focus,textarea:focus,.wp-block-search__input:focus,[data-section="section-header-mobile-trigger"] .ast-button-wrap .ast-mobile-menu-trigger-minimal:focus,.ast-mobile-popup-drawer.active .menu-toggle-close:focus,.woocommerce-ordering select.orderby:focus,#ast-scroll-top:focus,.woocommerce a.add_to_cart_button:focus,.woocommerce .button.single_add_to_cart_button:focus{border-style:dotted;border-color:inherit;border-width:thin;outline-color:transparent;}.main-header-menu .menu-link,.ast-header-custom-item a{color:#000000;}.main-header-menu .menu-item:hover > .menu-link,.main-header-menu .menu-item:hover > .ast-menu-toggle,.main-header-menu .ast-masthead-custom-menu-items a:hover,.main-header-menu .menu-item.focus > .menu-link,.main-header-menu .menu-item.focus > .ast-menu-toggle,.main-header-menu .current-menu-item > .menu-link,.main-header-menu .current-menu-ancestor > .menu-link,.main-header-menu .current-menu-item > .ast-menu-toggle,.main-header-menu .current-menu-ancestor > .ast-menu-toggle{color:#0274be;}.header-main-layout-3 .ast-main-header-bar-alignment{margin-right:auto;}.header-main-layout-2 .site-header-section-left .ast-site-identity{text-align:left;}.ast-logo-title-inline .site-logo-img{padding-right:1em;}.site-logo-img img{ transition:all 0.2s linear;}.ast-header-break-point .ast-mobile-menu-buttons-minimal.menu-toggle{background:transparent;color:#ff7275;}.ast-header-break-point .ast-mobile-menu-buttons-outline.menu-toggle{background:transparent;border:1px solid #ff7275;color:#ff7275;}.ast-header-break-point .ast-mobile-menu-buttons-fill.menu-toggle{background:#ff7275;color:#000000;}#secondary {margin: 4em 0 2.5em;word-break: break-word;line-height: 2;}#secondary li {margin-bottom: 0.25em;}#secondary li:last-child {margin-bottom: 0;}@media (max-width: 768px) {.js_active .ast-plain-container.ast-single-post #secondary {margin-top: 1.5em;}}.ast-separate-container.ast-two-container #secondary .widget {background-color: #fff;padding: 2em;margin-bottom: 2em;}@media (min-width: 993px) {.ast-left-sidebar #secondary {padding-right: 60px;}.ast-right-sidebar #secondary {padding-left: 60px;}}@media (max-width: 993px) {.ast-right-sidebar #secondary {padding-left: 30px;}.ast-left-sidebar #secondary {padding-right: 30px;}}.footer-adv .footer-adv-overlay{border-top-style:solid;border-top-color:#7a7a7a;}.wp-block-buttons.aligncenter{justify-content:center;}@media (max-width:782px){.entry-content .wp-block-columns .wp-block-column{margin-left:0px;}}.wp-block-image.aligncenter{margin-left:auto;margin-right:auto;}.wp-block-table.aligncenter{margin-left:auto;margin-right:auto;}@media (max-width:768px){.ast-separate-container #primary,.ast-separate-container #secondary{padding:1.5em 0;}#primary,#secondary{padding:1.5em 0;margin:0;}.ast-left-sidebar #content > .ast-container{display:flex;flex-direction:column-reverse;width:100%;}.ast-separate-container .ast-article-post,.ast-separate-container .ast-article-single{padding:1.5em 2.14em;}.ast-author-box img.avatar{margin:20px 0 0 0;}}@media (max-width:768px){#secondary.secondary{padding-top:0;}.ast-separate-container.ast-right-sidebar #secondary{padding-left:1em;padding-right:1em;}.ast-separate-container.ast-two-container #secondary{padding-left:0;padding-right:0;}.ast-page-builder-template .entry-header #secondary,.ast-page-builder-template #secondary{margin-top:1.5em;}}@media (max-width:768px){.ast-right-sidebar #primary{padding-right:0;}.ast-page-builder-template.ast-left-sidebar #secondary,.ast-page-builder-template.ast-right-sidebar #secondary{padding-right:20px;padding-left:20px;}.ast-right-sidebar #secondary,.ast-left-sidebar #primary{padding-left:0;}.ast-left-sidebar #secondary{padding-right:0;}}@media (min-width:769px){.ast-separate-container.ast-right-sidebar #primary,.ast-separate-container.ast-left-sidebar #primary{border:0;}.search-no-results.ast-separate-container #primary{margin-bottom:4em;}}@media (min-width:769px){.ast-right-sidebar #primary{border-right:1px solid var(--ast-border-color);}.ast-left-sidebar #primary{border-left:1px solid var(--ast-border-color);}.ast-right-sidebar #secondary{border-left:1px solid var(--ast-border-color);margin-left:-1px;}.ast-left-sidebar #secondary{border-right:1px solid var(--ast-border-color);margin-right:-1px;}.ast-separate-container.ast-two-container.ast-right-sidebar #secondary{padding-left:30px;padding-right:0;}.ast-separate-container.ast-two-container.ast-left-sidebar #secondary{padding-right:30px;padding-left:0;}.ast-separate-container.ast-right-sidebar #secondary,.ast-separate-container.ast-left-sidebar #secondary{border:0;margin-left:auto;margin-right:auto;}.ast-separate-container.ast-two-container #secondary .widget:last-child{margin-bottom:0;}}.elementor-button-wrapper .elementor-button{border-style:solid;text-decoration:none;border-top-width:1px;border-right-width:1px;border-left-width:1px;border-bottom-width:1px;}body .elementor-button.elementor-size-sm,body .elementor-button.elementor-size-xs,body .elementor-button.elementor-size-md,body .elementor-button.elementor-size-lg,body .elementor-button.elementor-size-xl,body .elementor-button{border-top-left-radius:0;border-top-right-radius:0;border-bottom-right-radius:0;border-bottom-left-radius:0;padding-top:10px;padding-right:20px;padding-bottom:10px;padding-left:20px;}.elementor-button-wrapper .elementor-button{border-color:#ee5453;background-color:#ee5453;}.elementor-button-wrapper .elementor-button:hover,.elementor-button-wrapper .elementor-button:focus{color:#fffefe;background-color:#61ce70;border-color:#61ce70;}.wp-block-button .wp-block-button__link ,.elementor-button-wrapper .elementor-button{color:#ffffff;}.elementor-button-wrapper .elementor-button{font-family:'Open Sans',sans-serif;font-weight:600;line-height:1em;text-transform:none;}.wp-block-button .wp-block-button__link:hover,.wp-block-button .wp-block-button__link:focus{color:#fffefe;background-color:#61ce70;border-color:#61ce70;}.elementor-widget-heading h4.elementor-heading-title{line-height:1.2em;}.elementor-widget-heading h5.elementor-heading-title{line-height:1.2em;}.elementor-widget-heading h6.elementor-heading-title{line-height:1.25em;}.wp-block-button .wp-block-button__link{border-style:solid;border-top-width:1px;border-right-width:1px;border-left-width:1px;border-bottom-width:1px;border-color:#ee5453;background-color:#ee5453;color:#ffffff;font-family:'Open Sans',sans-serif;font-weight:600;line-height:1em;text-transform:none;border-top-left-radius:0;border-top-right-radius:0;border-bottom-right-radius:0;border-bottom-left-radius:0;padding-top:10px;padding-right:20px;padding-bottom:10px;padding-left:20px;}.menu-toggle,button,.ast-button,.ast-custom-button,.button,input#submit,input[type="button"],input[type="submit"],input[type="reset"]{border-style:solid;border-top-width:1px;border-right-width:1px;border-left-width:1px;border-bottom-width:1px;color:#ffffff;border-color:#ee5453;background-color:#ee5453;padding-top:10px;padding-right:20px;padding-bottom:10px;padding-left:20px;font-family:'Open Sans',sans-serif;font-weight:600;line-height:1em;text-transform:none;border-top-left-radius:0;border-top-right-radius:0;border-bottom-right-radius:0;border-bottom-left-radius:0;}button:focus,.menu-toggle:hover,button:hover,.ast-button:hover,.ast-custom-button:hover .button:hover,.ast-custom-button:hover ,input[type=reset]:hover,input[type=reset]:focus,input#submit:hover,input#submit:focus,input[type="button"]:hover,input[type="button"]:focus,input[type="submit"]:hover,input[type="submit"]:focus{color:#fffefe;background-color:#61ce70;border-color:#61ce70;}@media (max-width:768px){.ast-mobile-header-stack .main-header-bar .ast-search-menu-icon{display:inline-block;}.ast-header-break-point.ast-header-custom-item-outside .ast-mobile-header-stack .main-header-bar .ast-search-icon{margin:0;}.ast-comment-avatar-wrap img{max-width:2.5em;}.ast-separate-container .ast-comment-list li.depth-1{padding:1.5em 2.14em;}.ast-separate-container .comment-respond{padding:2em 2.14em;}.ast-comment-meta{padding:0 1.8888em 1.3333em;}}@media (min-width:544px){.ast-container{max-width:100%;}}@media (max-width:544px){.ast-separate-container .ast-article-post,.ast-separate-container .ast-article-single,.ast-separate-container .comments-title,.ast-separate-container .ast-archive-description{padding:1.5em 1em;}.ast-separate-container #content .ast-container{padding-left:0.54em;padding-right:0.54em;}.ast-separate-container .ast-comment-list li.depth-1{padding:1.5em 1em;margin-bottom:1.5em;}.ast-separate-container .ast-comment-list .bypostauthor{padding:.5em;}.ast-search-menu-icon.ast-dropdown-active .search-field{width:170px;}.ast-separate-container #secondary{padding-top:0;}.ast-separate-container.ast-two-container #secondary .widget{margin-bottom:1.5em;padding-left:1em;padding-right:1em;}.site-branding img,.site-header .site-logo-img .custom-logo-link img{max-width:100%;}}.ast-no-sidebar.ast-separate-container .entry-content .alignfull {margin-left: -6.67em;margin-right: -6.67em;width: auto;}@media (max-width: 1200px) {.ast-no-sidebar.ast-separate-container .entry-content .alignfull {margin-left: -2.4em;margin-right: -2.4em;}}@media (max-width: 768px) {.ast-no-sidebar.ast-separate-container .entry-content .alignfull {margin-left: -2.14em;margin-right: -2.14em;}}@media (max-width: 544px) {.ast-no-sidebar.ast-separate-container .entry-content .alignfull {margin-left: -1em;margin-right: -1em;}}.ast-no-sidebar.ast-separate-container .entry-content .alignwide {margin-left: -20px;margin-right: -20px;}.ast-no-sidebar.ast-separate-container .entry-content .wp-block-column .alignfull,.ast-no-sidebar.ast-separate-container .entry-content .wp-block-column .alignwide {margin-left: auto;margin-right: auto;width: 100%;}@media (max-width:768px){.site-title{display:none;}.site-header .site-description{display:none;}.entry-title{font-size:30px;}h1,.entry-content h1{font-size:30px;}h2,.entry-content h2{font-size:25px;}h3,.entry-content h3{font-size:20px;}.astra-logo-svg{width:199px;}header .custom-logo-link img,.ast-header-break-point .site-logo-img .custom-mobile-logo-link img{max-width:199px;}}@media (max-width:544px){.widget-title{font-size:22px;font-size:1.375rem;}body,button,input,select,textarea,.ast-button,.ast-custom-button{font-size:16px;font-size:1rem;}#secondary,#secondary button,#secondary input,#secondary select,#secondary textarea{font-size:16px;font-size:1rem;}.site-title{display:none;}.site-header .site-description{display:none;}.entry-title{font-size:30px;}h1,.entry-content h1{font-size:30px;}h2,.entry-content h2{font-size:25px;}h3,.entry-content h3{font-size:20px;}header .custom-logo-link img,.ast-header-break-point .site-branding img,.ast-header-break-point .custom-logo-link img{max-width:135px;}.astra-logo-svg{width:135px;}.ast-header-break-point .site-logo-img .custom-mobile-logo-link img{max-width:135px;}}@media (max-width:768px){html{font-size:91.2%;}}@media (max-width:544px){html{font-size:100%;}}@media (min-width:769px){.ast-container{max-width:1040px;}}@font-face {font-family: "Astra";src: url(https://langformula.ru/wp-content/themes/astra/assets/fonts/astra.woff) format("woff"),url(https://langformula.ru/wp-content/themes/astra/assets/fonts/astra.ttf) format("truetype"),url(https://langformula.ru/wp-content/themes/astra/assets/fonts/astra.svg#astra) format("svg");font-weight: normal;font-style: normal;font-display: fallback;}@media (max-width:921px) {.main-header-bar .main-header-bar-navigation{display:none;}}.ast-desktop .main-header-menu.submenu-with-border .sub-menu,.ast-desktop .main-header-menu.submenu-with-border .astra-full-megamenu-wrapper{border-color:#0274be;}.ast-desktop .main-header-menu.submenu-with-border .sub-menu{border-top-width:1px;border-right-width:0px;border-left-width:0px;border-bottom-width:0px;border-style:solid;}.ast-desktop .main-header-menu.submenu-with-border .sub-menu .sub-menu{top:-1px;}.ast-desktop .main-header-menu.submenu-with-border .sub-menu .menu-link,.ast-desktop .main-header-menu.submenu-with-border .children .menu-link{border-bottom-width:0px;border-style:solid;border-color:#eaeaea;}@media (min-width:769px){.main-header-menu .sub-menu .menu-item.ast-left-align-sub-menu:hover > .sub-menu,.main-header-menu .sub-menu .menu-item.ast-left-align-sub-menu.focus > .sub-menu{margin-left:-0px;}}.ast-small-footer{border-top-style:solid;border-top-width:0;border-top-color:#7a7a7a;}.ast-small-footer-wrap{text-align:center;}.ast-header-break-point.ast-header-custom-item-inside .main-header-bar .main-header-bar-navigation .ast-search-icon {display: none;}.ast-header-break-point.ast-header-custom-item-inside .main-header-bar .ast-search-menu-icon .search-form {padding: 0;display: block;overflow: hidden;}.ast-header-break-point .ast-header-custom-item .widget:last-child {margin-bottom: 1em;}.ast-header-custom-item .widget {margin: 0.5em;display: inline-block;vertical-align: middle;}.ast-header-custom-item .widget p {margin-bottom: 0;}.ast-header-custom-item .widget li {width: auto;}.ast-header-custom-item-inside .button-custom-menu-item .menu-link {display: none;}.ast-header-custom-item-inside.ast-header-break-point .button-custom-menu-item .ast-custom-button-link {display: none;}.ast-header-custom-item-inside.ast-header-break-point .button-custom-menu-item .menu-link {display: block;}.ast-header-break-point.ast-header-custom-item-outside .main-header-bar .ast-search-icon {margin-right: 1em;}.ast-header-break-point.ast-header-custom-item-inside .main-header-bar .ast-search-menu-icon .search-field,.ast-header-break-point.ast-header-custom-item-inside .main-header-bar .ast-search-menu-icon.ast-inline-search .search-field {width: 100%;padding-right: 5.5em;}.ast-header-break-point.ast-header-custom-item-inside .main-header-bar .ast-search-menu-icon .search-submit {display: block;position: absolute;height: 100%;top: 0;right: 0;padding: 0 1em;border-radius: 0;}.ast-header-break-point .ast-header-custom-item .ast-masthead-custom-menu-items {padding-left: 20px;padding-right: 20px;margin-bottom: 1em;margin-top: 1em;}.ast-header-custom-item-inside.ast-header-break-point .button-custom-menu-item {padding-left: 0;padding-right: 0;margin-top: 0;margin-bottom: 0;}.astra-icon-down_arrow::after {content: "\e900";font-family: Astra;}.astra-icon-close::after {content: "\e5cd";font-family: Astra;}.astra-icon-drag_handle::after {content: "\e25d";font-family: Astra;}.astra-icon-format_align_justify::after {content: "\e235";font-family: Astra;}.astra-icon-menu::after {content: "\e5d2";font-family: Astra;}.astra-icon-reorder::after {content: "\e8fe";font-family: Astra;}.astra-icon-search::after {content: "\e8b6";font-family: Astra;}.astra-icon-zoom_in::after {content: "\e56b";font-family: Astra;}.astra-icon-check-circle::after {content: "\e901";font-family: Astra;}.astra-icon-shopping-cart::after {content: "\f07a";font-family: Astra;}.astra-icon-shopping-bag::after {content: "\f290";font-family: Astra;}.astra-icon-shopping-basket::after {content: "\f291";font-family: Astra;}.astra-icon-circle-o::after {content: "\e903";font-family: Astra;}.astra-icon-certificate::after {content: "\e902";font-family: Astra;}blockquote {padding: 1.2em;}:root .has-ast-global-color-0-color{color:var(--ast-global-color-0);}:root .has-ast-global-color-0-background-color{background-color:var(--ast-global-color-0);}:root .wp-block-button .has-ast-global-color-0-color{color:var(--ast-global-color-0);}:root .wp-block-button .has-ast-global-color-0-background-color{background-color:var(--ast-global-color-0);}:root .has-ast-global-color-1-color{color:var(--ast-global-color-1);}:root .has-ast-global-color-1-background-color{background-color:var(--ast-global-color-1);}:root .wp-block-button .has-ast-global-color-1-color{color:var(--ast-global-color-1);}:root .wp-block-button .has-ast-global-color-1-background-color{background-color:var(--ast-global-color-1);}:root .has-ast-global-color-2-color{color:var(--ast-global-color-2);}:root .has-ast-global-color-2-background-color{background-color:var(--ast-global-color-2);}:root .wp-block-button .has-ast-global-color-2-color{color:var(--ast-global-color-2);}:root .wp-block-button .has-ast-global-color-2-background-color{background-color:var(--ast-global-color-2);}:root .has-ast-global-color-3-color{color:var(--ast-global-color-3);}:root .has-ast-global-color-3-background-color{background-color:var(--ast-global-color-3);}:root .wp-block-button .has-ast-global-color-3-color{color:var(--ast-global-color-3);}:root .wp-block-button .has-ast-global-color-3-background-color{background-color:var(--ast-global-color-3);}:root .has-ast-global-color-4-color{color:var(--ast-global-color-4);}:root .has-ast-global-color-4-background-color{background-color:var(--ast-global-color-4);}:root .wp-block-button .has-ast-global-color-4-color{color:var(--ast-global-color-4);}:root .wp-block-button .has-ast-global-color-4-background-color{background-color:var(--ast-global-color-4);}:root .has-ast-global-color-5-color{color:var(--ast-global-color-5);}:root .has-ast-global-color-5-background-color{background-color:var(--ast-global-color-5);}:root .wp-block-button .has-ast-global-color-5-color{color:var(--ast-global-color-5);}:root .wp-block-button .has-ast-global-color-5-background-color{background-color:var(--ast-global-color-5);}:root .has-ast-global-color-6-color{color:var(--ast-global-color-6);}:root .has-ast-global-color-6-background-color{background-color:var(--ast-global-color-6);}:root .wp-block-button .has-ast-global-color-6-color{color:var(--ast-global-color-6);}:root .wp-block-button .has-ast-global-color-6-background-color{background-color:var(--ast-global-color-6);}:root .has-ast-global-color-7-color{color:var(--ast-global-color-7);}:root .has-ast-global-color-7-background-color{background-color:var(--ast-global-color-7);}:root .wp-block-button .has-ast-global-color-7-color{color:var(--ast-global-color-7);}:root .wp-block-button .has-ast-global-color-7-background-color{background-color:var(--ast-global-color-7);}:root .has-ast-global-color-8-color{color:var(--ast-global-color-8);}:root .has-ast-global-color-8-background-color{background-color:var(--ast-global-color-8);}:root .wp-block-button .has-ast-global-color-8-color{color:var(--ast-global-color-8);}:root .wp-block-button .has-ast-global-color-8-background-color{background-color:var(--ast-global-color-8);}:root{--ast-global-color-0:#0170B9;--ast-global-color-1:#3a3a3a;--ast-global-color-2:#3a3a3a;--ast-global-color-3:#4B4F58;--ast-global-color-4:#F5F5F5;--ast-global-color-5:#FFFFFF;--ast-global-color-6:#E5E5E5;--ast-global-color-7:#424242;--ast-global-color-8:#000000;}:root {--ast-border-color : #dddddd;}.ast-single-entry-banner {-js-display: flex;display: flex;flex-direction: column;justify-content: center;text-align: center;position: relative;background: #eeeeee;}.ast-single-entry-banner[data-banner-layout="layout-1"] {max-width: 1000px;background: inherit;padding: 20px 0;}.ast-single-entry-banner[data-banner-width-type="custom"] {margin: 0 auto;width: 100%;}.ast-single-entry-banner + .site-content .entry-header {margin-bottom: 0;}header.entry-header .entry-title{font-size:24px;font-size:1.5rem;}header.entry-header > *:not(:last-child){margin-bottom:10px;}.ast-archive-entry-banner {-js-display: flex;display: flex;flex-direction: column;justify-content: center;text-align: center;position: relative;background: #eeeeee;}.ast-archive-entry-banner[data-banner-width-type="custom"] {margin: 0 auto;width: 100%;}.ast-archive-entry-banner[data-banner-layout="layout-1"] {background: inherit;padding: 20px 0;text-align: left;}body.archive .ast-archive-description{max-width:1000px;width:100%;text-align:left;padding-top:3em;padding-right:3em;padding-bottom:3em;padding-left:3em;}body.archive .ast-archive-description .ast-archive-title,body.archive .ast-archive-description .ast-archive-title *{font-size:26px;font-size:1.625rem;}body.archive .ast-archive-description > *:not(:last-child){margin-bottom:10px;}@media (max-width:768px){body.archive .ast-archive-description{text-align:left;}}@media (max-width:544px){body.archive .ast-archive-description{text-align:left;}}.ast-breadcrumbs .trail-browse,.ast-breadcrumbs .trail-items,.ast-breadcrumbs .trail-items li{display:inline-block;margin:0;padding:0;border:none;background:inherit;text-indent:0;text-decoration:none;}.ast-breadcrumbs .trail-browse{font-size:inherit;font-style:inherit;font-weight:inherit;color:inherit;}.ast-breadcrumbs .trail-items{list-style:none;}.trail-items li::after{padding:0 0.3em;content:"\00bb";}.trail-items li:last-of-type::after{display:none;}h1,.entry-content h1,h2,.entry-content h2,h3,.entry-content h3,h4,.entry-content h4,h5,.entry-content h5,h6,.entry-content h6{color:#000000;}.elementor-template-full-width .ast-container{display:block;}@media (max-width:544px){.elementor-element .elementor-wc-products .woocommerce[class*="columns-"] ul.products li.product{width:auto;margin:0;}.elementor-element .woocommerce .woocommerce-result-count{float:none;}}.ast-header-break-point .main-header-bar{border-bottom-width:1px;}@media (min-width:769px){.main-header-bar{border-bottom-width:1px;}}@media (min-width:769px){#primary{width:67%;}#secondary{width:33%;}}.main-header-menu .menu-item, #astra-footer-menu .menu-item, .main-header-bar .ast-masthead-custom-menu-items{-js-display:flex;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-moz-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column;}.main-header-menu > .menu-item > .menu-link, #astra-footer-menu > .menu-item > .menu-link{height:100%;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;-js-display:flex;display:flex;}.ast-primary-menu-disabled .main-header-bar .ast-masthead-custom-menu-items{flex:unset;}.main-header-menu .sub-menu .menu-item.menu-item-has-children > .menu-link:after{position:absolute;right:1em;top:50%;transform:translate(0,-50%) rotate(270deg);}.ast-header-break-point .main-header-bar .main-header-bar-navigation .page_item_has_children > .ast-menu-toggle::before, .ast-header-break-point .main-header-bar .main-header-bar-navigation .menu-item-has-children > .ast-menu-toggle::before, .ast-mobile-popup-drawer .main-header-bar-navigation .menu-item-has-children>.ast-menu-toggle::before, .ast-header-break-point .ast-mobile-header-wrap .main-header-bar-navigation .menu-item-has-children > .ast-menu-toggle::before{font-weight:bold;content:"\e900";font-family:Astra;text-decoration:inherit;display:inline-block;}.ast-header-break-point .main-navigation ul.sub-menu .menu-item .menu-link:before{content:"\e900";font-family:Astra;font-size:.65em;text-decoration:inherit;display:inline-block;transform:translate(0, -2px) rotateZ(270deg);margin-right:5px;}.widget_search .search-form:after{font-family:Astra;font-size:1.2em;font-weight:normal;content:"\e8b6";position:absolute;top:50%;right:15px;transform:translate(0, -50%);}.astra-search-icon::before{content:"\e8b6";font-family:Astra;font-style:normal;font-weight:normal;text-decoration:inherit;text-align:center;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;z-index:3;}.main-header-bar .main-header-bar-navigation .page_item_has_children > a:after, .main-header-bar .main-header-bar-navigation .menu-item-has-children > a:after, .menu-item-has-children .ast-header-navigation-arrow:after{content:"\e900";display:inline-block;font-family:Astra;font-size:.6rem;font-weight:bold;text-rendering:auto;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;margin-left:10px;line-height:normal;}.menu-item-has-children .sub-menu .ast-header-navigation-arrow:after{margin-left:0;}.ast-mobile-popup-drawer .main-header-bar-navigation .ast-submenu-expanded>.ast-menu-toggle::before{transform:rotateX(180deg);}.ast-header-break-point .main-header-bar-navigation .menu-item-has-children > .menu-link:after{display:none;}.ast-separate-container .blog-layout-1, .ast-separate-container .blog-layout-2, .ast-separate-container .blog-layout-3{background-color:transparent;background-image:none;}.ast-separate-container .ast-article-post{background-color:var(--ast-global-color-5);;}@media (max-width:768px){.ast-separate-container .ast-article-post{background-color:var(--ast-global-color-5);;}}@media (max-width:544px){.ast-separate-container .ast-article-post{background-color:var(--ast-global-color-5);;}}.ast-separate-container .ast-article-single:not(.ast-related-post), .ast-separate-container .comments-area .comment-respond,.ast-separate-container .comments-area .ast-comment-list li, .ast-separate-container .ast-woocommerce-container, .ast-separate-container .error-404, .ast-separate-container .no-results, .single.ast-separate-container  .ast-author-meta, .ast-separate-container .related-posts-title-wrapper, .ast-separate-container.ast-two-container #secondary .widget,.ast-separate-container .comments-count-wrapper, .ast-box-layout.ast-plain-container .site-content,.ast-padded-layout.ast-plain-container .site-content, .ast-separate-container .comments-area .comments-title, .ast-narrow-container .site-content{background-color:var(--ast-global-color-5);;}@media (max-width:768px){.ast-separate-container .ast-article-single:not(.ast-related-post), .ast-separate-container .comments-area .comment-respond,.ast-separate-container .comments-area .ast-comment-list li, .ast-separate-container .ast-woocommerce-container, .ast-separate-container .error-404, .ast-separate-container .no-results, .single.ast-separate-container  .ast-author-meta, .ast-separate-container .related-posts-title-wrapper, .ast-separate-container.ast-two-container #secondary .widget,.ast-separate-container .comments-count-wrapper, .ast-box-layout.ast-plain-container .site-content,.ast-padded-layout.ast-plain-container .site-content, .ast-separate-container .comments-area .comments-title, .ast-narrow-container .site-content{background-color:var(--ast-global-color-5);;}}@media (max-width:544px){.ast-separate-container .ast-article-single:not(.ast-related-post), .ast-separate-container .comments-area .comment-respond,.ast-separate-container .comments-area .ast-comment-list li, .ast-separate-container .ast-woocommerce-container, .ast-separate-container .error-404, .ast-separate-container .no-results, .single.ast-separate-container  .ast-author-meta, .ast-separate-container .related-posts-title-wrapper, .ast-separate-container.ast-two-container #secondary .widget,.ast-separate-container .comments-count-wrapper, .ast-box-layout.ast-plain-container .site-content,.ast-padded-layout.ast-plain-container .site-content, .ast-separate-container .comments-area .comments-title, .ast-narrow-container .site-content{background-color:var(--ast-global-color-5);;}}:root{--e-global-color-astglobalcolor0:#0170B9;--e-global-color-astglobalcolor1:#3a3a3a;--e-global-color-astglobalcolor2:#3a3a3a;--e-global-color-astglobalcolor3:#4B4F58;--e-global-color-astglobalcolor4:#F5F5F5;--e-global-color-astglobalcolor5:#FFFFFF;--e-global-color-astglobalcolor6:#E5E5E5;--e-global-color-astglobalcolor7:#424242;--e-global-color-astglobalcolor8:#000000;}.comment-reply-title{font-size:26px;font-size:1.625rem;}.ast-comment-meta{line-height:1.666666667;color:#0274be;font-size:13px;font-size:0.8125rem;}.ast-comment-list #cancel-comment-reply-link{font-size:16px;font-size:1rem;}.comments-count-wrapper {padding: 2em 0;}.comments-count-wrapper .comments-title {font-weight: normal;word-wrap: break-word;}.ast-comment-list {margin: 0;word-wrap: break-word;padding-bottom: 0.5em;list-style: none;}.ast-comment-list li {list-style: none;}.ast-comment-list li.depth-1 .ast-comment,.ast-comment-list li.depth-2 .ast-comment {border-bottom: 1px solid #eeeeee;}.ast-comment-list .comment-respond {padding: 1em 0;border-bottom: 1px solid #eeeeee;}.ast-comment-list .comment-respond .comment-reply-title {margin-top: 0;padding-top: 0;}.ast-comment-list .comment-respond p {margin-bottom: .5em;}.ast-comment-list .ast-comment-edit-reply-wrap {-js-display: flex;display: flex;justify-content: flex-end;}.ast-comment-list .ast-edit-link {flex: 1;}.ast-comment-list .comment-awaiting-moderation {margin-bottom: 0;}.ast-comment {padding: 1em 0 ;}.ast-comment-avatar-wrap img {border-radius: 50%;}.ast-comment-content {clear: both;}.ast-comment-cite-wrap {text-align: left;}.ast-comment-cite-wrap cite {font-style: normal;}.comment-reply-title {padding-top: 1em;font-weight: normal;line-height: 1.65;}.ast-comment-meta {margin-bottom: 0.5em;}.comments-area {border-top: 1px solid #eeeeee;margin-top: 2em;}.comments-area .comment-form-comment {width: 100%;border: none;margin: 0;padding: 0;}.comments-area .comment-notes,.comments-area .comment-textarea,.comments-area .form-allowed-tags {margin-bottom: 1.5em;}.comments-area .form-submit {margin-bottom: 0;}.comments-area textarea#comment,.comments-area .ast-comment-formwrap input[type="text"] {width: 100%;border-radius: 0;vertical-align: middle;margin-bottom: 10px;}.comments-area .no-comments {margin-top: 0.5em;margin-bottom: 0.5em;}.comments-area p.logged-in-as {margin-bottom: 1em;}.ast-separate-container .comments-count-wrapper {background-color: #fff;padding: 2em 6.67em 0;}@media (max-width: 1200px) {.ast-separate-container .comments-count-wrapper {padding: 2em 3.34em;}}.ast-separate-container .comments-area {border-top: 0;}.ast-separate-container .ast-comment-list {padding-bottom: 0;}.ast-separate-container .ast-comment-list li {background-color: #fff;}.ast-separate-container .ast-comment-list li.depth-1 .children li {padding-bottom: 0;padding-top: 0;margin-bottom: 0;}.ast-separate-container .ast-comment-list li.depth-1 .ast-comment,.ast-separate-container .ast-comment-list li.depth-2 .ast-comment {border-bottom: 0;}.ast-separate-container .ast-comment-list .comment-respond {padding-top: 0;padding-bottom: 1em;background-color: transparent;}.ast-separate-container .ast-comment-list .pingback p {margin-bottom: 0;}.ast-separate-container .ast-comment-list .bypostauthor {padding: 2em;margin-bottom: 1em;}.ast-separate-container .ast-comment-list .bypostauthor li {background: transparent;margin-bottom: 0;padding: 0 0 0 2em;}.ast-separate-container .comment-reply-title {padding-top: 0;}.comment-content a {word-wrap: break-word;}.comment-form-legend {margin-bottom: unset;padding: 0 0.5em;}.ast-separate-container .ast-comment-list li.depth-1 {padding: 4em 6.67em;margin-bottom: 2em;}@media (max-width: 1200px) {.ast-separate-container .ast-comment-list li.depth-1 {padding: 3em 3.34em;}}.ast-separate-container .comment-respond {background-color: #fff;padding: 4em 6.67em;border-bottom: 0;}@media (max-width: 1200px) {.ast-separate-container .comment-respond {padding: 3em 2.34em;}}.ast-comment-list .children {margin-left: 2em;}@media (max-width: 992px) {.ast-comment-list .children {margin-left: 1em;}}.ast-comment-list #cancel-comment-reply-link {white-space: nowrap;font-size: 15px;font-size: 1rem;margin-left: 1em;}.ast-comment-avatar-wrap {float: left;clear: right;margin-right: 1.33333em;}.ast-comment-meta-wrap {float: left;clear: right;padding: 0 0 1.33333em;}.ast-comment-time .timendate,.ast-comment-time .reply {margin-right: 0.5em;}.comments-area #wp-comment-cookies-consent {margin-right: 10px;}.ast-page-builder-template .comments-area {padding-left: 20px;padding-right: 20px;margin-top: 0;margin-bottom: 2em;}.ast-separate-container .ast-comment-list .bypostauthor .bypostauthor {background: transparent;margin-bottom: 0;padding-right: 0;padding-bottom: 0;padding-top: 0;}@media (min-width:769px){.ast-separate-container .ast-comment-list li .comment-respond{padding-left:2.66666em;padding-right:2.66666em;}}@media (max-width:544px){.ast-separate-container .comments-count-wrapper{padding:1.5em 1em;}.ast-separate-container .ast-comment-list li.depth-1{padding:1.5em 1em;margin-bottom:1.5em;}.ast-separate-container .ast-comment-list .bypostauthor{padding:.5em;}.ast-separate-container .comment-respond{padding:1.5em 1em;}.ast-comment-meta{font-size:13px;font-size:0.8125rem;}.comment-reply-title{font-size:26px;font-size:1.625rem;}.ast-comment-list #cancel-comment-reply-link{font-size:16px;font-size:1rem;}.ast-separate-container .ast-comment-list .bypostauthor li{padding:0 0 0 .5em;}.ast-comment-list .children{margin-left:0.66666em;}}@media (max-width:768px){.ast-comment-avatar-wrap img{max-width:2.5em;}.comments-area{margin-top:1.5em;}.ast-separate-container .comments-count-wrapper{padding:2em 2.14em;}.ast-separate-container .ast-comment-list li.depth-1{padding:1.5em 2.14em;}.ast-separate-container .comment-respond{padding:2em 2.14em;}}@media (max-width:768px){.ast-comment-avatar-wrap{margin-right:0.5em;}}
+</style>
+<link rel='stylesheet' id='astra-menu-animation-css' href='https://langformula.ru/wp-content/themes/astra/assets/css/minified/menu-animation.min.css?ver=4.1.5' media='all' />
+<link rel='stylesheet' id='wp-block-library-css' href='https://langformula.ru/wp-includes/css/dist/block-library/style.min.css?ver=6.2.1' media='all' />
+<link rel='stylesheet' id='wc-blocks-vendors-style-css' href='https://langformula.ru/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/wc-blocks-vendors-style.css?ver=10.0.4' media='all' />
+<link rel='stylesheet' id='wc-blocks-style-css' href='https://langformula.ru/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/wc-blocks-style.css?ver=10.0.4' media='all' />
+<style id='global-styles-inline-css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--color--ast-global-color-0: var(--ast-global-color-0);--wp--preset--color--ast-global-color-1: var(--ast-global-color-1);--wp--preset--color--ast-global-color-2: var(--ast-global-color-2);--wp--preset--color--ast-global-color-3: var(--ast-global-color-3);--wp--preset--color--ast-global-color-4: var(--ast-global-color-4);--wp--preset--color--ast-global-color-5: var(--ast-global-color-5);--wp--preset--color--ast-global-color-6: var(--ast-global-color-6);--wp--preset--color--ast-global-color-7: var(--ast-global-color-7);--wp--preset--color--ast-global-color-8: var(--ast-global-color-8);--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}body { margin: 0;--wp--style--global--content-size: var(--wp--custom--ast-content-width-size);--wp--style--global--wide-size: var(--wp--custom--ast-wide-width-size); }.wp-site-blocks > .alignleft { float: left; margin-right: 2em; }.wp-site-blocks > .alignright { float: right; margin-left: 2em; }.wp-site-blocks > .aligncenter { justify-content: center; margin-left: auto; margin-right: auto; }.wp-site-blocks > * { margin-block-start: 0; margin-block-end: 0; }.wp-site-blocks > * + * { margin-block-start: 24px; }body { --wp--style--block-gap: 24px; }body .is-layout-flow > *{margin-block-start: 0;margin-block-end: 0;}body .is-layout-flow > * + *{margin-block-start: 24px;margin-block-end: 0;}body .is-layout-constrained > *{margin-block-start: 0;margin-block-end: 0;}body .is-layout-constrained > * + *{margin-block-start: 24px;margin-block-end: 0;}body .is-layout-flex{gap: 24px;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}body{padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}a:where(:not(.wp-element-button)){text-decoration: none;}.wp-element-button, .wp-block-button__link{background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;line-height: inherit;padding: calc(0.667em + 2px) calc(1.333em + 2px);text-decoration: none;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-ast-global-color-0-color{color: var(--wp--preset--color--ast-global-color-0) !important;}.has-ast-global-color-1-color{color: var(--wp--preset--color--ast-global-color-1) !important;}.has-ast-global-color-2-color{color: var(--wp--preset--color--ast-global-color-2) !important;}.has-ast-global-color-3-color{color: var(--wp--preset--color--ast-global-color-3) !important;}.has-ast-global-color-4-color{color: var(--wp--preset--color--ast-global-color-4) !important;}.has-ast-global-color-5-color{color: var(--wp--preset--color--ast-global-color-5) !important;}.has-ast-global-color-6-color{color: var(--wp--preset--color--ast-global-color-6) !important;}.has-ast-global-color-7-color{color: var(--wp--preset--color--ast-global-color-7) !important;}.has-ast-global-color-8-color{color: var(--wp--preset--color--ast-global-color-8) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-ast-global-color-0-background-color{background-color: var(--wp--preset--color--ast-global-color-0) !important;}.has-ast-global-color-1-background-color{background-color: var(--wp--preset--color--ast-global-color-1) !important;}.has-ast-global-color-2-background-color{background-color: var(--wp--preset--color--ast-global-color-2) !important;}.has-ast-global-color-3-background-color{background-color: var(--wp--preset--color--ast-global-color-3) !important;}.has-ast-global-color-4-background-color{background-color: var(--wp--preset--color--ast-global-color-4) !important;}.has-ast-global-color-5-background-color{background-color: var(--wp--preset--color--ast-global-color-5) !important;}.has-ast-global-color-6-background-color{background-color: var(--wp--preset--color--ast-global-color-6) !important;}.has-ast-global-color-7-background-color{background-color: var(--wp--preset--color--ast-global-color-7) !important;}.has-ast-global-color-8-background-color{background-color: var(--wp--preset--color--ast-global-color-8) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-ast-global-color-0-border-color{border-color: var(--wp--preset--color--ast-global-color-0) !important;}.has-ast-global-color-1-border-color{border-color: var(--wp--preset--color--ast-global-color-1) !important;}.has-ast-global-color-2-border-color{border-color: var(--wp--preset--color--ast-global-color-2) !important;}.has-ast-global-color-3-border-color{border-color: var(--wp--preset--color--ast-global-color-3) !important;}.has-ast-global-color-4-border-color{border-color: var(--wp--preset--color--ast-global-color-4) !important;}.has-ast-global-color-5-border-color{border-color: var(--wp--preset--color--ast-global-color-5) !important;}.has-ast-global-color-6-border-color{border-color: var(--wp--preset--color--ast-global-color-6) !important;}.has-ast-global-color-7-border-color{border-color: var(--wp--preset--color--ast-global-color-7) !important;}.has-ast-global-color-8-border-color{border-color: var(--wp--preset--color--ast-global-color-8) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='dashicons-css' href='https://langformula.ru/wp-includes/css/dashicons.min.css?ver=6.2.1' media='all' />
+<link rel='stylesheet' id='to-top-css' href='https://langformula.ru/wp-content/plugins/to-top/public/css/to-top-public.css?ver=2.5.2' media='all' />
+<link rel='stylesheet' id='woocommerce-layout-css' href='https://langformula.ru/wp-content/themes/astra/assets/css/minified/compatibility/woocommerce/woocommerce-layout.min.css?ver=4.1.5' media='all' />
+<link rel='stylesheet' id='woocommerce-smallscreen-css' href='https://langformula.ru/wp-content/themes/astra/assets/css/minified/compatibility/woocommerce/woocommerce-smallscreen.min.css?ver=4.1.5' media='only screen and (max-width: 768px)' />
+<link rel='stylesheet' id='woocommerce-general-css' href='https://langformula.ru/wp-content/themes/astra/assets/css/minified/compatibility/woocommerce/woocommerce.min.css?ver=4.1.5' media='all' />
+
+</header><!-- #masthead -->
+<div id="content" class="site-content">
+<div class="ast-container">
+<div id="primary" class="content-area primary">
+<main id="main" class="site-main">
+<article
+class="post-12065 page type-page status-publish has-post-thumbnail ast-article-single" id="post-12065" itemtype="https://schema.org/CreativeWork" itemscope="itemscope">
+<header class="entry-header ast-no-thumbnail">
+<h1 class="entry-title" itemprop="headline">Урок 1. Глагол to be в настоящем времени: I am sure &#8212;  Я уверен</h1>	</header> <!-- .entry-header -->
+<div class="entry-content clear"
+itemprop="text">
+<p>Мы начнем знакомство с английским предложением с самых важных элементов: глагола <strong>to be</strong> и личных местоимений, а также задействуем прилагательное &#8212; самую простую часть речи. На этом уроке мы научимся строить предложение по схеме:</p>
+<table style="border-collapse: collapse; width: 100%;" border="1">
+<tbody>
+<tr style="height: 25px;">
+<td style="width: 100%; text-align: center; height: 25px;"><strong>Личное местоимение + глагол to be + прилагательное </strong></td>
+</tr>
+</tbody>
+</table>
+<p>То есть предложение типа &#171;I am sure&#187; – &#171;Я уверен&#187;.</p>
+<p><strong>Содержание:</strong></p>
+<ul>
+<li>Личные местоимения.</li>
+<li>“Ты” и “вы” в английском языке.</li>
+<li>To be &#8212; самый нужный глагол.</li>
+<li>Местоимение it &#8212; не только &#171;оно&#187;.</li>
+<li>Упражнения.</li>
+<li>Словарь.</li>
+</ul>
+<h2>Личные местоимения</h2>
+<p>Первые слова, которые нужны для разговорной речи &#8212; это <strong>личные местоимения</strong>, то есть слова, называющие лицо. В русском языке это <em>я, ты, он, она</em> и другие. Английские личные местоимения, как и русские, могут относиться к трем лицам, быть в единственном и множественном числе:</p><div class='code-block code-block-1' style='margin: 8px auto 8px 0; text-align: left; display: block; clear: both;'>
+<div data-elementor-type="section" data-elementor-id="26798" class="elementor elementor-26798">
+<div class="elementor-section-wrap">
+<section class="elementor-section elementor-top-section elementor-element elementor-element-34c91550 elementor-section-full_width elementor-section-height-default elementor-section-height-default elementor-invisible" data-id="34c91550" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeInLeft&quot;}">
+<div class="elementor-container elementor-column-gap-default">
+<div class="elementor-row">
+<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-33e435c9" data-id="33e435c9" data-element_type="column">
+<div class="elementor-column-wrap elementor-element-populated">
+<div class="elementor-widget-wrap">
+<div class="elementor-element elementor-element-4a4a5769 elementor-widget elementor-widget-heading" data-id="4a4a5769" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;none&quot;}" data-widget_type="heading.default">
+<div class="elementor-widget-container">
+<p class="elementor-heading-title elementor-size-default">Пройдите тест на уровень английского:</p>		</div>
+
+<table style="height: 100px;">
+<tbody>
+<tr style="height: 25px;">
+<th style="height: 25px;" width="67"></th>
+<th style="height: 25px;" width="209">Единственное число</th>
+<th style="height: 25px;" width="224">Множественное число</th>
+</tr>
+<tr style="height: 25px;">
+<td style="height: 25px;" width="67">1 лицо</td>
+<td style="height: 25px;" width="209"><strong>I </strong><span class="nontranscriptable"> </span>— я</td>
+<td style="height: 25px;" width="224"><strong>We</strong><span class="nontranscriptable"> </span>— мы</td>
+</tr>
+<tr style="height: 25px;">
+<td style="height: 25px;" width="67">2 лицо</td>
+<td style="height: 25px;" width="209"><strong>You</strong> — ты</td>
+<td style="height: 25px;" width="224"><strong>You</strong> — вы</td>
+</tr>
+<tr style="height: 25px;">
+<td style="height: 25px;" width="67">3 лицо</td>
+<td style="height: 25px;" width="209"><strong>He, she, it</strong><span class="nontranscriptable"> </span>— он, она, оно</td>
+<td style="height: 25px;" width="224"><strong>They</strong> — они</td>
+</tr>
+</tbody>
+</table>
+<h2>&#171;Ты&#187; и &#171;вы&#187; в английском языке</h2>
+<p>Обратите внимание, что русскому &#171;ты&#187; и &#171;вы&#187; в английском соответствует одно местоимение <strong>you</strong>. Нам от этого только проще: во-первых, меньше местоимений учить, во-вторых, не нужно думать, когда к человеку обращаться на «вы», а когда на «ты».</p>
+<p>Но чтобы построить предложение, одного местоимения недостаточно. Второй важный элемент &#8212; глагол<strong> to be</strong>.</p>
+<h2>To be – самый нужный английский глагол</h2>
+<p>Глагол <strong>to</strong> <strong>be </strong>– это самый нужный и употребительный глагол в английском языке. Он значит «быть», «являться». В речи он принимает разные формы в зависимости от лица, числа и времени.</p>
+<hr />
+<p><em>Примечание: глагол <strong>to be</strong> можно называть просто <strong>be</strong>, но в учебных пособиях (русскоязычных) обычно глагол в неопределенной форме пишут с частицей <strong>to,</strong> которая сама по себе ничего не значит, а служит лишь индикатором того, что глагол используется в неопределенной форме. Не будем отходить от этой традиции.</em></p>
+<hr />
+<p>К примеру, в первом лице единственного числа он превращается в <strong>am</strong>. Возьмем пример с прилагательным <strong>sure</strong> &#8212; <em>уверенный.</em></p>
+<p><strong>Прилагательное</strong> &#8212; это часть речи, которая обозначает признак, в нашем случае относящийся к лицу, выраженному местоимением. В отличие от глагола, прилагательному не нужно менять свою форму, подстраиваясь под лицо и число местоимения. Прилагательное &#8212; самая простая часть речи, поэтому мы начнем строить предложения именно с ним.</p>
+<p>Посмотрим, как фраза из трех слов будет выглядеть в зависимости от лица и числа. Мы пока возьмем примеры только в настоящем времени, к прошедшему и будущему вернемся позже.</p>
+<div class="su-list" style="margin-left:0px">
+<ul>
+<li><i class="sui sui-circle" style="color:#feb431"></i> <strong>Единственное число:</strong></li>
+</ul>
+<blockquote><p>I <strong>am</strong> sure – Я уверен.</p>
+<p>You <strong>are</strong><span class="nontranscriptable"> </span>sure &#8212; Ты уверен.</p>
+<p>He (She, It) <strong>is</strong> sure &#8212; Он уверен (Она уверена, Оно уверено).</p></blockquote>
+<ul>
+<li><i class="sui sui-circle" style="color:#feb431"></i> <strong>Множественное число:</strong></li>
+</ul>
+<blockquote><p>We <strong>are</strong> sure. &#8212; Мы уверены.</p>
+<p>You <strong>are</strong> sure. &#8212; Вы уверены.</p>
+<p>They <strong>are</strong> sure. &#8212; Они уверены.</p></blockquote>
+<p>Как видите, глагол <strong>to be</strong> принимает разные формы: <strong>am, are</strong> или <strong>is.</strong> Пусть вас не смущает, что эти слова не похожи на <strong>to be</strong> &#8212; это разные формы одного слова.</p>
+<p>В русском языке мы не используем такой глагол-связку в настоящем времени, но слово &#171;быть&#187; подразумевается:</p>
+<ul>
+<li><i class="sui sui-circle" style="color:#feb431"></i> Я уверен = Я есть уверенный = Я являюсь уверенным.</li>
+<li><i class="sui sui-circle" style="color:#feb431"></i> Мы уверены = Мы есть уверенные = Мы являемся уверенными.</li>
+</ul>
+<p>Еще раз повторим формы глагола <strong>to be</strong>, но уже в виде таблицы &#8212; так нагляднее.</p>
+<table style="height: 100px;">
+<tbody>
+<tr style="height: 25px;">
+<th style="height: 25px;" width="67"></th>
+<th style="height: 25px;" width="209">Единственное число</th>
+<th style="height: 25px;" width="224">Множественное число</th>
+</tr>
+<tr style="height: 25px;">
+<td style="height: 25px;" width="67">1 лицо</td>
+<td style="height: 25px;" width="209">I <strong>am</strong> sure (I’m sure)</td>
+<td style="height: 25px;" width="224">We <strong>are</strong> sure (We’re sure)</td>
+</tr>
+<tr style="height: 25px;">
+<td style="height: 25px;" width="67">2 лицо</td>
+<td style="height: 25px;" width="209">You <strong>are</strong> sure (You’re sure)</td>
+<td style="height: 25px;" width="224">You <strong>are</strong> sure (You’re sure)</td>
+</tr>
+<tr style="height: 25px;">
+<td style="height: 25px;" width="67">3 лицо</td>
+<td style="height: 25px;" width="209">He, she, it <strong>is</strong> sure (He’s\She’s\It’s sure)</td>
+<td style="height: 25px;" width="224">They <strong>are</strong> sure (They’re sure)</td>
+</tr>
+</tbody>
+</table>
+<p>В скобках я добавил примечания: личные местоимения и глагол to be в разговорной речи обычно &#171;срастаются&#187;, сокращаясь до указанных форм.</p>
+<h2>Местоимение it &#8212; не только &#171;оно&#187;</h2>
+<p>Местоимение<strong> it</strong> используется, не только когда говорят о неодушевленном предмете, но и:</p>
+<ul>
+<li><i class="sui sui-circle" style="color:#feb431"></i> Применительно к животным и птицам &#8212; в английском языке их часто называют <strong>it,</strong> а не <strong>she</strong> или he.</li>
+</ul>
+<blockquote><p><strong>It</strong> is scared. &#8212; <strong>Он</strong> напуган (о щенке)</p>
+<p><strong>It</strong> is angry. &#8212; <strong>Она</strong> сердится (о птице)</p></blockquote>
+<ul>
+<li><i class="sui sui-circle" style="color:#feb431"></i> В безличных предложениях, где речь идет о какой-то ситуации, состоянии, погоде. По-русски мы в таком случае говорим “это”, а не “оно” или вообще обходимся одним прилагательным:</li>
+</ul>
+<blockquote><p><strong>It</strong> is good. &#8212; <strong>Это</strong> хорошо.</p>
+<p><strong>It</strong> is bad. &#8212; <strong>Это</strong> плохо.</p></blockquote>
+<p>По-английски нельзя сказать просто “Cold”, или “Dark”, как мы говорим &#171;холодно&#187; или &#171;темно&#187; в значении &#171;Сейчас (здесь) холодно&#187;, &#171;Сейчас (здесь) темно&#187;. Обязательно нужно &#171;It is&#187;:</p>
+<blockquote><p><strong>It is</strong> cold. &#8212; Холодно.</p>
+<p><strong>It is</strong> dark. – Темно.</p></blockquote>
+<h2>Грамматические упражнения</h2>
+<p>Пройдите эти упражнения, чтобы закрепить материал урока.</p>
+<a href="{% url 'test1' %}"><button type="button" class="btn btn-dark me-2">Тест 1</button></a>
+
+<h2>Словарь</h2>
+<h3>1. Слова из урока</h3>
+<ul>
+<li><i class="sui sui-circle" style="color:#feb431"></i> <strong>Личные местоимения, глагол to be и его формы.</strong></li>
+</ul>
+<table style="height: 275px;" width="539">
+<tbody>
+<tr style="height: 25px;">
+<td style="height: 25px;" width="185">I</td>
+<td style="height: 25px;" width="192">[aɪ]</td>
+<td style="height: 25px;" width="162">я</td>
+</tr>
+<tr style="height: 25px;">
+<td style="height: 25px;">you</td>
+<td style="height: 25px;">[juː]</td>
+<td style="height: 25px;">ты, вы</td>
+</tr>
+<tr style="height: 25px;">
+<td style="height: 25px;">he</td>
+<td style="height: 25px;">[hiː]</td>
+<td style="height: 25px;">он</td>
+</tr>
+<tr style="height: 25px;">
+<td style="height: 25px;">she</td>
+<td style="height: 25px;">[ʃiː]</td>
+<td style="height: 25px;">она</td>
+</tr>
+<tr style="height: 25px;">
+<td style="height: 25px;">it</td>
+<td style="height: 25px;">[ɪt]</td>
+<td style="height: 25px;">оно, это</td>
+</tr>
+<tr style="height: 25px;">
+<td style="height: 25px;">we</td>
+<td style="height: 25px;">[wiː]</td>
+<td style="height: 25px;">мы</td>
+</tr>
+<tr style="height: 25px;">
+<td style="height: 25px;">they</td>
+<td style="height: 25px;">[ðeɪ]</td>
+<td style="height: 25px;">они</td>
+</tr>
+<tr style="height: 25px;">
+<td style="height: 25px;">to be</td>
+<td style="height: 25px;">[tuː biː]</td>
+<td style="height: 25px;">быть</td>
+</tr>
+<tr style="height: 25px;">
+<td style="height: 25px;">is</td>
+<td style="height: 25px;">[ɪz]</td>
+<td style="height: 25px;">(он) есть</td>
+</tr>
+<tr style="height: 25px;">
+<td style="height: 25px;">are</td>
+<td style="height: 25px;">[ɑː]</td>
+<td style="height: 25px;">(вы, они, мы) есть</td>
+</tr>
+<tr style="height: 25px;">
+<td style="height: 25px;">am</td>
+<td style="height: 25px;">[æm]</td>
+<td style="height: 25px;">(я) есть</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><i class="sui sui-circle" style="color:#feb431"></i> <strong>Прилагательные</strong></li>
+</ul>
+<p>Здесь приведены слова, использованные на уроке и в упражнениях. Если вам не знакомы эти слова, я рекомендую их выучить.</p>
+<table style="height: 275px;" width="539">
+<tbody>
+<tr style="height: 25px;">
+<td style="height: 25px;" width="185">scared</td>
+<td style="height: 25px;" width="192">[skeəd]</td>
+<td style="height: 25px;" width="162">испуганный</td>
+</tr>
+<tr style="height: 25px;">
+<td style="height: 25px;">ready</td>
+<td style="height: 25px;">[ˈrɛdi]</td>
+<td style="height: 25px;">готовый</td>
+</tr>
+<tr style="height: 25px;">
+<td style="height: 25px;">lazy</td>
+<td style="height: 25px;">[ˈleɪzi]</td>
+<td style="height: 25px;">ленивый</td>
+</tr>
+<tr style="height: 25px;">
+<td style="height: 25px;">strange</td>
+<td style="height: 25px;">[streɪnʤ]</td>
+<td style="height: 25px;">странный</td>
+</tr>
+<tr style="height: 25px;">
+<td style="height: 25px;">smart</td>
+<td style="height: 25px;">[smɑːt]</td>
+<td style="height: 25px;">умный</td>
+</tr>
+<tr style="height: 25px;">
+<td style="height: 25px;">wrong</td>
+<td style="height: 25px;">[rɒŋ]</td>
+<td style="height: 25px;">неправ, неправый</td>
+</tr>
+<tr style="height: 25px;">
+<td style="height: 25px;">tired</td>
+<td style="height: 25px;">[ˈtaɪəd]</td>
+<td style="height: 25px;">уставший</td>
+</tr>
+<tr style="height: 25px;">
+<td style="height: 25px;">kind</td>
+<td style="height: 25px;">[kaɪnd]</td>
+<td style="height: 25px;">добрый</td>
+</tr>
+<tr style="height: 25px;">
+<td style="height: 25px;">good</td>
+<td style="height: 25px;">[gʊd]</td>
+<td style="height: 25px;">хороший</td>
+</tr>
+<tr style="height: 25px;">
+<td style="height: 25px;">stupid</td>
+<td style="height: 25px;">[ˈstjuːpɪd]</td>
+<td style="height: 25px;">глупый</td>
+</tr>
+<tr style="height: 25px;">
+<td style="height: 25px;">bad</td>
+<td style="height: 25px;">[bæd]</td>
+<td style="height: 25px;">плохой</td>
+</tr>
+<tr>
+<td>cold</td>
+<td>[<span class="transcribed_word">kəʊld</span>]<span class="nontranscriptable"> </span></td>
+<td>холодный</td>
+</tr>
+<tr>
+<td>dark</td>
+<td>
+<div id="transcr_output">[<span class="transcribed_word">dɑːk</span>]</div>
+</td>
+<td>темный</td>
+</tr>
+</tbody>
+</table>
+<p>По формуле “I am sure” можно построить тысячи предложений с общим смыслом “кто-то является каким-то”. Особенно хорошо под эту схему подходят прилагательные, называющие качества, возраст, внешность, состояние человека &#8212; именно слова на эту тему использованы в этом и будут использованы в нескольких следующих уроках.</p>
+<h3>2. Дополнительная лексика</h3>
+<ul>
+<li><i class="sui sui-circle" style="color:#feb431"></i> <strong>Слова, усиливающие прилагательные</strong></li>
+</ul>
+</div>
+<p>Этих слов не было в уроке, но вам следует обратить на них внимание. Они часто используются, чтобы усилить значение прилагательных. Они всегда стоят перед прилагательным.</p>
+<table style="height: 100px;">
+<tbody>
+<tr style="height: 25px;">
+<td style="height: 25px;" width="133">very</td>
+<td style="height: 25px;" width="141">[ˈvɛri]</td>
+<td style="height: 25px;" width="189">очень</td>
+</tr>
+<tr style="height: 25px;">
+<td style="height: 25px;" width="133">so</td>
+<td style="height: 25px;" width="141">[səʊ]</td>
+<td style="height: 25px;" width="189">так, настолько</td>
+</tr>
+<tr style="height: 25px;">
+<td style="height: 25px;" width="133">really</td>
+<td style="height: 25px;" width="141">[ˈrɪəli]</td>
+<td style="height: 25px;" width="189">действительно, по-настоящему</td>
+</tr>
+<tr style="height: 25px;">
+<td style="height: 25px;" width="133">too</td>
+<td style="height: 25px;" width="141">[<span class="transcribed_word">tuː</span>]</td>
+<td style="height: 25px;" width="189">слишком</td>
+</tr>
+</tbody>
+</table>
+<p>Примеры:</p>
+<blockquote><p>He is <strong>so</strong> stupid. &#8212; Он такой глупый.</p>
+<p>She is <strong>so</strong> lazy. &#8212; Она такая ленивая.</p>
+<p>They are <strong>very strange</strong> &#8212; Они очень странные.</p>
+<p>I am <strong>really</strong> ready. &#8212; Я действительно готов.</p>
+<p>You are <strong>too</strong> tired. &#8212; Ты слишком устал.</p></blockquote>
+<hr />
+
+
+{% endblock %}

@@ -1,0 +1,92 @@
+{% extends 'main/layout.html' %}
+{% load static%}
+
+{% block title %}Граматика{% endblock %}
+
+{% block content %}
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Моя страница с кнопками</title>
+  <style>
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.row .column {
+    flex-basis: calc(33.33% - 20px);
+    margin: 10px;
+}
+
+@media (max-width: 768px) {
+    .row .column {
+        flex-basis: calc(100% - 20px);
+    }
+}
+
+.button {
+    display: block;
+    width: 200px;
+    height: 250px;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.button img {
+  width: 100px;
+  height: 100px;
+  margin-top: 20px;
+}
+
+.button a {
+  text-decoration: none;
+  color: black;
+}
+  </style>
+</head>
+<body>
+  <div class="row">
+    <div class="column">
+      <div class="button">
+        <a href="https://example.com">
+          <img src="https://example.com/button1.png" alt="Курс">
+        </a>
+      </div>
+      <div class="button">
+        <a href="https://example.com">
+          <img src="https://example.com/button4.png" alt="Видео">
+        </a>
+      </div>
+    </div>
+    <div class="column">
+      <div class="button">
+        <a href="https://example.com">
+          <img src="https://example.com/button2.png" alt="Книги">
+        </a>
+      </div>
+      <div class="button">
+        <a href="https://example.com">
+          <img src="https://example.com/button5.png" alt="Словарь">
+        </a>
+      </div>
+    </div>
+    <div class="column">
+      <div class="button">
+        <a href="https://example.com">
+          <img src="https://example.com/button3.png" alt="Кнопка 3">
+        </a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
+
+{% endblock %}

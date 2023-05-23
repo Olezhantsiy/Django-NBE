@@ -1,0 +1,147 @@
+
+.nav-link {
+  font-size: 24px; /* начальный размер шрифта */
+  transform: scale(1); /* начальный масштаб элемента */
+  transition: transform 0.5s ease; /* добавляем анимацию перехода */
+  color: #fff;
+}
+
+.nav-link:hover {
+color: #FFC107;
+  transform: scale(1.25); /* увеличиваем масштаб элемента при наведении */
+}
+
+.form-control-dark {
+  border-color: var(--bs-gray);
+}
+.form-control-dark:focus {
+  border-color: #fff;
+  box-shadow: 0 0 0 .25rem rgba(255, 255, 255, .25);
+}
+
+.text-small {
+  font-size: 85%;
+}
+
+.dropdown-toggle:not(:focus) {
+  outline: 0;
+}
+
+main .features{
+    margin-left: 190px;
+    color: #fff;
+    margin-top: 150px;
+    text-align: left;
+    width: 45%;
+    font-size: 52px;
+}
+
+main .text{
+    margin-left: 190px;
+    color: #fff;
+    margin-top: 100px;
+    text-align: left;
+    line-height: 1.5;
+    width: 52%;
+    font-size: 25px;
+}
+
+.profile-features{
+    margin-left: 190px;
+    color: #fff;
+    margin-top: 4px;
+    text-align: left;
+    width: 45%;
+    font-size: 30px;
+}
+
+
+.pagination-dark .page-link {
+  color: #fff;
+  background-color: #343a40;
+  border-color: #343a40;
+}
+
+.pagination-dark .page-link:hover {
+  color: #fff;
+  background-color: #23272b;
+  border-color: #1d2124;
+}
+
+.pagination-dark .page-item.active .page-link {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.pagination-dark .page-item.disabled .page-link {
+  color: #6c757d;
+  background-color: #343a40;
+  border-color: #343a40;
+}
+
+.form-group label, .form-check label, .form-check-input{
+    font-size: 28px;
+    color: black;
+}
+
+
+.btn{
+    font-size: 20px;
+}
+
+.form-control{
+    color: #fff;
+    background-color: #333;
+    border-color: #333;
+}
+
+d .btn{
+    background-color: #333;
+    border-color: #333;
+}
+
+.btn-increas{
+    font-size: 14px;
+}
+
+.card {
+   font-size: 30px;
+  box-shadow: 0 8px 8px 5px rgba(0, 0, 0, 0.3);
+}
+
+
+
+
+.topic {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.topic h5 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.btn {
+  font-size: 14px;
+  padding: 4px 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

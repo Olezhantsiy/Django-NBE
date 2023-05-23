@@ -1,0 +1,59 @@
+.form-signin {
+    width: 100%;
+    margin: auto;
+    }
+
+body {
+height: 100%;
+display: flex;
+padding-top: 200px;
+padding-bottom: 40px;
+align-items: center;
+background-color: #3B3B45;
+}
+
+body {
+background-color: #3B3B45;
+}
+.form-signin .form-floating:focus-within{
+  z-index: 2;
+  }
+
+.form-signin input[type="Введите Email адресс"] {
+  margin-bottom: 10px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  }
+
+.form-signin input[type="Введите пароль"] {
+  margin-bottom: 50px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+main .h3 {
+    text-align: center;
+    font-size: 37px;
+    color: #fff;
+}
+
+form .small mb-1{
+    color: #fff;
+}
+
+.add-experience:hover {
+    background: #BA68C8;
+    color: #fff;
+    cursor: pointer;
+    border: solid 1px #BA68C8 }
+
+.form-outline input[type=text], .form-outline input[type=password], .form-outline input[type=email]{
+    color: #fff;
+    background-color: #333;
+    border-color: #333;
+}
+.form-outline label{
+    color: #fff;
+    }
+
+

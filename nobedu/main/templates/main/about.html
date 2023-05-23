@@ -1,0 +1,21 @@
+{% extends 'main/layout.html' %}
+{% load static%}
+
+{% block title %}Про нас{% endblock %}
+
+{% block content %}
+<style>
+    .nav-link {
+  font-size: 24px; /* начальный размер шрифта */
+  transform: scale(1); /* начальный масштаб элемента */
+  transition: transform 0.5s ease; /* добавляем анимацию перехода */
+  color: #fff;
+}
+
+.nav-link:hover {
+color: #FFC107;
+  transform: scale(1.25); /* увеличиваем масштаб элемента при наведении */
+}
+</style>
+
+{% endblock %}
