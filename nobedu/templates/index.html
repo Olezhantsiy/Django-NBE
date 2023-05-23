@@ -1,0 +1,170 @@
+{% extends 'base.html' %}
+{% load static%}
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+{% block title %}Главная страница{% endblock title %}
+
+
+
+{% block header %}
+{% include 'layouts/header.html' %}
+{% endblock header %}
+
+
+
+{% block main %}
+
+<body>
+    <main class="main">
+        <section class="top">
+            <div class="container">
+                <div class="title">
+                  Learn English with NBE
+                </div>
+
+            <a href="#" class="top__link">
+                Get started
+            </a>
+          </div>
+        </section>
+        <div class="slider">
+          <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide" style="background-image: url({% static 'main/img/slider__1.jpg' %});"></div>
+            <div class="swiper-slide" style="background-image: url({% static 'main/img/slider__2.png' %});"></div>
+            <div class="swiper-slide" style="background-image: url({% static 'main/img/slider__3.jpg' %});"></div>
+            <div class="swiper-slide" style="background-image: url({% static 'main/img/slider__4.webp' %});"></div>
+          </div>
+          <div class="swiper-pagination"></div>
+          </div>
+        </div>
+        <section class="why__lease">
+          <div class="container">
+            <h2 class="section-title">
+              Почему стоит использовать наш сайт?
+            </h2>
+            <ul class="why-lease__list">
+                <li class="why-lease__item">
+                    <h3 class="why-lease__item-title">
+                      Эффиктивная программа изучения
+                    </h3>
+                    <p class="why-lease__item-text">
+                      Наша эффиктивная программа изучения поможет вам овладеть английским
+                    </p>
+                </li>
+                <li class="why-lease__item">
+                  <h3 class="why-lease__item-title">
+                    Множество задач
+                  </h3>
+                  <p class="why-lease__item-text">
+                    У нас вы найдете множество интересных заданий и упражнений, которые помогут вам овладеть языком быстрее и эффективнее.
+                  </p>
+              </li>
+              <li class="why-lease__item">
+                <h3 class="why-lease__item-title">
+                  Обратная связь от преподавателей
+                </h3>
+                <p class="why-lease__item-text">
+                  Наша команда опытных преподавателей всегда готова ответить на ваши вопросы и помочь вам в достижении желаемых результатов.
+                </p>
+            </li>
+            <li class="why-lease__item">
+          </li>
+            </ul>
+          </div>
+        </section>
+        <section class="how-does">
+          <div class="container">
+            <div class="how-does__inner">
+              <h2 class="section-title">
+                Актуальные материалы
+              </h2>
+              <p class="how-does__text">
+                Наши преподаватели отобрали лучшие аутентичные учебники по грамматике.
+                Объем рабочих материалов будет определяться для вас персонально.
+                Количество упражнений на отработку зависит от сложности темы и
+                вашего желания углубиться в нее.
+              </p>
+              <h4 class="how__does-title">
+                Почему вы должны выбрать именно нас:
+              </h4>
+              <ol class="how-does__list">
+                <li class="how-does__item">Предоставление качественных уроков: наш сайт может предлагать курсы английского языка разного уровня сложности, начиная от начального и заканчивая продвинутым.</li>
+                <li class="how-does__item">Наш сайт может предлагать интересные задания и тесты, которые помогут пользователям закрепить пройденный материал. Это может включать в себя викторины, тесты на понимание текста и т.д.</li>
+                <li class="how-does__item">Сообщество изучающих английский язык: вы можете создать сообщество студентов или преподавателей английского языка на вашем сайте.</li>
+              </ol>
+            </div>
+          </div>
+        </section>
+        <section class="video">
+          <div class="container">
+            <h2 class="section-title video__title">
+              Эффективная методика изучения слов
+            </h2>
+              <iframe class="vidoe__content" width="1000" height="500"
+              src="https://www.youtube.com/embed/TyjuFyoKbQA?controls=0" title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+          </div>
+        </section>
+        <section class="important">
+          <div class="container">
+            <h2 class="section-title important__title">
+               Вы изучите следующие темы:
+            </h2>
+            <ul class="important__list">
+              <li class="important__item">
+                <p class="important__item-text">
+                  Глагол to be, личные местоимения. Артикли. Оборот there is / there are. Present Simple. Present Continious
+                </p>
+              </li>
+              <li class="important__item">
+                <p class="important__item-text">
+                  Past Simple. Future Simple. Модальные глаголы can, have to и should. Наречия образа действия и наречия частотности
+                  Местоимения much, many, few, little.
+                </p>
+              </li>
+              <li class="important__item">
+                <p class="important__item-text">
+                  Present Perfect. Past Continuous. Типы вопросов. Основные союзы и слова-связки. Сравнительная конструкция as… as
+                  Конструкция used to
+                </p>
+              </li>
+              <li class="important__item">
+                <p class="important__item-text">
+                  Present Perfect Continuous. Past Perfect. Модальные глаголы could, may, might
+                  Прилагательные с окончаниями -ing и -ed. Пассивный залог. Косвенная речь
+                </p>
+              </li>
+            </ul>
+          </div>
+        </section>
+    </main>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper(".swiper", {
+    pagination: {
+      el: ".swiper-pagination",
+    },
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false
+      },
+      effect: "fade",
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+  });
+  </script>
+</body>
+{% endblock main %}
+
+
+
+{% block footer %}
+{% include 'layouts/footer.html' %}
+{% endblock footer %}
+
+

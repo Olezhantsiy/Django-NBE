@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+{% load static%}
+
+
+
+{% block title %}Главная страница{% endblock title %}
+
+
+
+{% block header %}
+{% include 'layouts/header.html' %}
+{% endblock header %}
+
+
+
+{% block main %}
+
+<main class="main">
+         <div class="container">
+         <div class="section-title materials__title ">
+          твой выбор
+        </div>
+            <section class="materials">
+            <div class="materials_box">
+                <div class="materials__item">
+                    <a href="{% url 'books' %}" class="materials__item-link">
+                      <h1 class="box-title  section-title"> КНИГИ</h1>
+                      <img class="materials_img" src="./images/materials__img-1.jpg" alt="">
+                    </a>
+                </div>
+                <div class="materials__item">
+                  <a href="{% url 'video' %}" class="materials__item-link">
+                    <h1 class="box-title  section-title"> ВЫДЕО</h1>
+                    <img class="materials_img" src="url({% static '/img/materials__img-1.jpg' %})" alt="">
+                  </a>
+                </div>
+            </div>
+            <div class="materials_box">
+                <div class="materials__item">
+                  <a href="{% url 'lesmanager' %}" class="materials__item-link">
+                    <h1 class="box-title section-title"> КУРСЫ</h1>
+                    <img class="materials_img" src="./images/materials__img-3.jpg" alt="">
+
+                  </a>
+                </div>
+                <div class="materials__item">
+                  <a href="{% url 'testmanager' %}" class="materials__item-link">
+                    <h1 class="box-title  section-title">Упражнения</h1>
+                    <img class="materials_img" src="./images/materials__img-3.webp" alt="">
+
+                  </a>
+                </div>
+            </div>
+            </section>
+         </div>
+    </main>
+
+
+{% endblock main %}
+
+
+
+{% block footer %}
+{% include 'layouts/footer.html' %}
+{% endblock footer %}
+

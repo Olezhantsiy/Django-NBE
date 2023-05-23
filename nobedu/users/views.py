@@ -18,7 +18,7 @@ def login(request):
     else:
         form = UserloginForm()
     context = {'form': form}
-    return render(request, 'users/login.html', context)
+    return render(request, 'pages/login.html', context)
 
 def reg(request):
     if request.method == 'POST':
@@ -31,13 +31,18 @@ def reg(request):
     else:
         form = UserRegistrationForm()
     context = {'form': form}
-    return render(request, 'users/registration.html', context)
+    return render(request, 'pages/registration.html', context)
 
 
 def profile(request):
+    if request.method == 'POST':
+        form = UserProfileForm(data=request.POST)
+        if form.is_valid():
+            form.save()
+            return HttpResponseRedirect('/users/profile')
     form = UserProfileForm(instance=request.user)
     context = {'form': form}
-    return render(request, 'users/profile.html', context)
+    return render(request, 'pages/profile.html', context)
 
 def logoutPage(request):
     logout(request)

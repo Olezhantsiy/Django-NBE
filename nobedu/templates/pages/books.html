@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+{% load static%}
+
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f5f5f5;
+			margin: 0; padding: 0;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			min-height: 100vh;
+		}
+		.container {
+			max-width: 800px;
+			padding: 50px;
+			background-color: #fff;
+			border-radius: 10px;
+		}
+		h1, h2, h3, h4, h5, h6 {
+			font-weight: bold;
+			margin-top: 20px;
+			margin-bottom: 10px;
+		}
+		p {
+			line-height: 1.5;
+			margin-bottom: 20px;
+		}
+	</style>
+
+{% block title %}Книги{% endblock title %}
+
+
+
+{% block header %}
+{% include 'layouts/header.html' %}
+{% endblock header %}
+
+
+
+{% block main %}
+
+<body>
+	<div class="container">
+		<h1>Заголовок статьи</h1>
+		<p> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		<h1>Подзаголовок 1</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+		<h1>Подзаголовок 2</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+		<h1>Подзаголовок 3</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+		<h1>Подзаголовок 4</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+		<h1>Подзаголовок 5</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+	</div>
+</body>
+
+{% endblock main %}
+
+
+
+{% block footer %}
+{% include 'layouts/footer.html' %}
+{% endblock footer %}
+

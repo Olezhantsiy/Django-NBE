@@ -1,0 +1,72 @@
+{% extends 'base.html' %}
+{% load static%}
+{% block title %}Тренажёр{% endblock title %}
+
+
+{% block header %}
+{% include 'layouts/header.html' %}
+{% endblock header %}
+
+{% block main %}
+<div class="btn-exercise">
+  <div class="topic d-flex">
+  <h5>Тема 1: to be, личные местоимения </h5>
+  <a class="btn btn-dark me-2" href="/quiz/test/1/">Тест 1</a>
+</div>
+<div class="topic d-flex">
+  <h5>Тема 2: Глагол to be в прошедшем времени: I was sure — Я был уверен</h5>
+  <a href="/quiz/test/2/"><button type="button" class="btn btn-dark me-2">Тест 1</button></a>
+</div>
+<div class="topic d-flex">
+  <h5>Тема 3: Present simple</h5>
+  <a href=""><button type="button" class="btn btn-dark me-2">Тест 1</button></a>
+  <a href="#"><button type="button" class="btn btn-dark me-2">Тест 2</button></a>
+</div>
+<div class="topic d-flex">
+  <h5>Тема 4 Present Continuous:</h5>
+  <a href=""><button type="button" class="btn btn-dark me-2">Тест 1</button></a>
+  <a href="#"><button type="button" class="btn btn-dark me-2">Тест 2</button></a>
+</div>
+<div class="topic d-flex">
+  <h5>Тема 5 Present perfect:</h5>
+  <a href=""><button type="button" class="btn btn-dark me-2">Тест1</button></a>
+  <a href="#"><button type="button" class="btn btn-dark me-2">Тест2</button></a>
+</div>
+
+<div class="topic d-flex">
+  <h5>Тема 6 Past simple.:</h5>
+  <a href="#"><button type="button" class="btn btn-dark me-2">Тест1</button></a>
+  <a href="#"><button type="button" class="btn btn-dark me-2">Тест2</button></a>
+</div>
+
+<div class="topic d-flex">
+  <h5>Тема 7 Past Continuous:</h5>
+  <a href="#"><button type="button" class="btn btn-dark me-2">Тест1</button></a>
+  <a href="#"><button type="button" class="btn btn-dark me-2">Тест2</button></a>
+</div>
+<div class="topic d-flex">
+  <h5>Тема 8 Типы вопросов:</h5>
+  <a href="#"><button type="button" class="btn btn-dark me-2">Тест1</button></a>
+</div>
+<div class="topic d-flex">
+  <h5>Тема 9 Конструкция used to:</h5>
+  <a href="#"><button type="button" class="btn btn-dark me-2">Тест1</button></a>
+</div>
+<div class="topic d-flex">
+  <h5>Тема 10 Past Perfect:</h5>
+  <a href="#"><button type="button" class="btn btn-dark me-2">Тест1</button></a>
+  <a href="#"><button type="button" class="btn btn-dark me-2">Тест2</button></a>
+</div>
+<div class="topic d-flex">
+  <h5>Тема 11 Модальные глаголы could, may, might:</h5>
+  <a href="#"><button type="button" class="btn btn-dark me-2">Тест1</button></a>
+</div>
+</div>
+
+{% endblock main %}
+
+{% block footer %}
+{% include 'layouts/footer.html' %}
+{% endblock footer %}
+
+

@@ -1,0 +1,29 @@
+{% extends 'main/layout.html' %}
+{% load static%}
+{% block title %}Результат{% endblock %}
+
+{% block content %}
+
+<div class="container py-5 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+          <div class="col-120 col-md-80 col-lg-60 col-xl-7">
+            <div class="card text-black" style="border-radius: 1rem;">
+              <div class="card-body p-10 text-center">
+                 <p class="card-title">Результат</p>
+                <p class="card-title">Очков: {{score}}</p>
+                <p class="card-text">Процент: {{percent}}%</p>
+                <p class="card-text">Верных ответов: {{correct}}</p>
+                <p class="card-text">Неправильных ответов: {{wrong}}</p>
+                <p class="card-text">Всего опросов: {{total}}</p>
+                <a href="{% url 'home' %}"> <button type="button" class="btn btn-warning btn-increas">На главную страницу</button></a>
+                  <a href="{% url 'home' %}"> <button type="button" class="btn btn-warning btn-increas">Начать тест заново</button></a>
+                  <a href="{% url 'lesmanager' %}"> <button type="button" class="btn btn-warning btn-increas">Повторить тему</button></a>
+
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+{% endblock %}

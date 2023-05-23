@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+{% load static%}
+
+
+
+{% block title %}Главная страница{% endblock title %}
+
+
+
+{% block header %}
+{% include 'layouts/header.html' %}
+{% endblock header %}
+
+
+
+{% block main %}
+
+    <main class="main">
+         <section class="video">
+            <div class="container">
+                <h2 class="section-title video__title main__video">
+                    Основные фразы на английском языке
+                  </h2>
+                    <iframe width="1200" height="600"
+                    src="https://www.youtube.com/embed/s6tbcu3Mlmw"
+                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay;
+                    clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+                    <h2 class="section-title video__title main__video-item ">
+                        Вся грамматика английского языка. План изучения.
+                      </h2>
+                        <iframe width="1200" height="600"
+                        src="https://www.youtube.com/embed/v-G7vbrllPk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <h2 class="section-title video__title main__video-item">
+                            Основные фразовые глаголы английского языка
+                          </h2>
+                            <iframe width="1200" height="600"
+                            src="https://www.youtube.com/embed/ZR_Nz8pc4Jg" title="YouTube video player"
+                            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;
+                            picture-in-picture; web-share"
+                             allowfullscreen></iframe>
+                            <h2 class="section-title video__title main__video-item">
+                                105 НЕПРАВИЛЬНЫХ ГЛАГОЛОВ за 7 минут.
+                              </h2>
+                                <iframe width="1200" height="600"
+                                src="https://www.youtube.com/embed/ajJVLzFgDuA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                <h2 class="section-title video__title main__video-item">
+                                УРОВЕНЬ А1. КОРОТКИЕ ФРАЗЫ И СЛОВОСОЧЕТАНИЯ НА АНГЛИЙСКОМ.
+                                  </h2>
+                                    <iframe width="1200" height="600"
+                                    src="https://www.youtube.com/embed/HmjmrMXPGWo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+            </div>
+         </section>
+    </main>
+
+
+{% endblock main %}
+
+
+
+{% block footer %}
+{% include 'layouts/footer.html' %}
+{% endblock footer %}
+
+

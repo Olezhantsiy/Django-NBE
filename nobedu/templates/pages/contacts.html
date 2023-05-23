@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% load static%}
+
+
+
+{% block title %}Контакты{% endblock title %}
+
+{% block header %}
+{% include 'layouts/header.html' %}
+{% endblock header %}
+
+
+
+{% block main %}
+    <main class="main">
+         <section class="contacts">
+            <div class="container">
+              <h2 class="section-title contacts__title">Contact Us</h2>
+              <p class="contacts__text">
+                Feel free to contact us with questions, potencial partnerships or media inquiries
+              </p>
+              <form action="#" class="form">
+                <input type="text" class="form__input" placeholder="Name">
+                <input type="email" class="form__input" placeholder="E-mail">
+                <textarea class="form__textarea" placeholder="Your text"></textarea>
+                <button class="form__btn" type="submit">Submit</button>
+              </form>
+            </div>
+         </section>
+    </main>
+  </div>
+</body>
+</html>
+{% endblock main %}
+
+
+
+{% block footer %}
+{% include 'layouts/footer.html' %}
+{% endblock footer %}
+
+
