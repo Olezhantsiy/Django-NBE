@@ -4,6 +4,10 @@
       <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
         <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-decoration-none"></a>
         <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-1000">
+          <li>
+             <!-- <div class="swiper-slide" style="background-image: url({% static 'main/img/slider__1.jpg' %});"></div> -->
+            <a href="{% url 'home' %}" ><img src="{% static '/img/logo.png' %}"></a>
+          </li>
           <li><a href="{% url 'home' %}" class="nav-link px-2 ">Главная</a></li>
           <li><a href="{% url 'materials' %}" class="nav-link px-2 ">Материалы</a></li>
           <li><a href="{% url 'testmanager' %}" class="nav-link px-2 ">Тренажёр</a></li>
